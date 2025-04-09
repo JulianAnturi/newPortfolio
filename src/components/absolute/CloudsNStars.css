@@ -1,0 +1,47 @@
+.stars {
+  position: absolute;
+  width: 200vw;
+  height: 200vh;
+  background-repeat: repeat;
+  transform: translate(-15px, -15px); /* <- Aquí el desplazamiento inicial 
+  /* top: -100; */
+  animation: moveStars 100s linear infinite;
+  /* top:100; */
+  /* animation: moveStars 60s linear infinite; */
+  /* animation: moveCloudsp 30s linear infinite; */
+  z-index: 1;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translate(-15px, -15px);
+  }
+  50% {
+    transform: translate(-500px, -500px);
+  }
+  100% {
+    transform: translate(-15px, -15px);
+  }
+}
+
+.clouds {
+  /* position: relative; */
+  position: absolute;
+  bottom: 0;
+  background-size: contain;
+  background-position: bottom center;
+  width: 150vw;
+  height: 200px;
+  background-repeat: repeat-x;
+  animation: moveClouds 100s linear infinite;
+  z-index: 4;
+  transform: translate(-15px, -15px)
+  /* border: 2px solid red; */
+  /* background-color: rgba(255,255,255,0.1); */
+}
+
+@keyframes moveClouds {
+  from { background-position-x: 0; }
+  to { background-position-x: -1000px; }
+}
+
