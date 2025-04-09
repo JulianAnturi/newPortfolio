@@ -1,0 +1,18 @@
+
+.content {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  color: white;
+  top: 40%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #0d2d58;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}

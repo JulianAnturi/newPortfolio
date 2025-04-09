@@ -6,18 +6,18 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <ConfigProvider */}
-    {/* theme={{ */}
-    {/*   token: { */}
-    {/*     colorPrimary: '#1668F0', */}
-    {/*       colorSecondary: "#01F09C", */}
-    {/*     // borderRadius: 2, */}
-    {/*     colorBgContainer: '#f6ffed', */}
-    {/*   } */}
-    {/* }} */}
-  {/* > */}
+    <ConfigProvider
+    theme={{
+      token: {
+        colorPrimary: '#1668F0',
+          colorSecondary: "#01F09C",
+        // borderRadius: 2,
+        colorBgContainer: '#f6ffed',
+      }
+    }}
+  >
 
       <App />
-    {/* </ConfigProvider>, */}
+     </ConfigProvider>,
   </StrictMode>
 )
