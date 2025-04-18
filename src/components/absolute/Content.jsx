@@ -1,10 +1,12 @@
+import { useNavigate } from 'react-router-dom'
 import "./Content.css";
 const Content =  ()=>{
   
+ const navigate   = useNavigate();
   return (
       <div className="content">
         <h1>Bienvenido a mi portafolio</h1>
-        <button>Ver proyectos</button>
+        <button onClick={()=>navigate('/portfolio')}>Ver proyectos</button>
       </div>
   )
 }
